@@ -62,11 +62,10 @@ module.exports = {
               destinationDir: 'static',
             },
           },
-          {
-            resolve: 'gatsby-remark-highlights',
-            options: {
-            }
-          }
+          'gatsby-remark-prismjs',
+          // 'gatsby-remark-code-repls',
+          'gatsby-remark-graphviz',
+          'gatsby-remark-emoji'
         ],
       },
     },
