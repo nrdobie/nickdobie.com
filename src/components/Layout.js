@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
-import './all.sass'
+import "../styles/index.css"
 import 'prismjs/themes/prism-solarizedlight.css'
 import "prismjs/plugins/line-numbers/prism-line-numbers.css"
 import "./prismjs.css"
@@ -47,7 +47,7 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:url" content="/" />
         <meta property="og:image" content="/img/og-image.jpg" />
       </Helmet>
-      <Navbar />
+      {/* <Navbar /> */}
       <div>{children}</div>
       <Footer />
     </div>

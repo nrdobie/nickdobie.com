@@ -11,10 +11,12 @@
     "@fortawesome/pro-solid-svg-icons": "^5.8.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "bulma": "^0.7.0",
+    "classnames": "^2.2.6",
     "gatsby": "^2.1.34",
     "gatsby-image": "^2.0.23",
     "gatsby-plugin-netlify": "^2.0.6",
     "gatsby-plugin-netlify-cms": "^3.0.15",
+    "gatsby-plugin-postcss": "^2.0.7",
     "gatsby-plugin-purgecss": "^3.1.0",
     "gatsby-plugin-react-helmet": "^3.0.4",
     "gatsby-plugin-sass": "^2.0.7",
@@ -41,6 +43,7 @@
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",
+    "reset.css": "^2.0.2",
     "uuid": "^3.2.1"
   },
   "keywords": [
@@ -52,9 +55,11 @@
     "clean": "rimraf .cache public",
     "start:app": "npm run develop",
     "start:lambda": "netlify-lambda serve src/lambda",
+    "start:typed-styles": "tcm --pattern src/**/*.module.css --watch",
     "start": "run-p start:**",
     "build:app": "npm run clean && gatsby build",
     "build:lambda": "netlify-lambda build src/lambda",
+    "build:typed-styles": "tcm --pattern src/**/*.module.css --watch",
     "build": "run-p build:**",
     "develop": "npm run clean && gatsby develop",
     "serve": "gatsby serve",
@@ -62,10 +67,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "@types/classnames": "^2.2.7",
     "http-proxy-middleware": "^0.19.1",
     "netlify-lambda": "^1.4.3",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.15.3",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "typed-css-modules": "^0.4.2"
   }
 }

@@ -3,10 +3,10 @@ import { Link } from 'gatsby'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 
-import logo from '../img/logo.svg'
-import instagram from '../img/social/instagram.svg'
-import twitter from '../img/social/twitter.svg'
-import vimeo from '../img/social/vimeo.svg'
+import logo from '../assets/logo.svg'
+import instagram from '../assets/social/instagram.svg'
+import twitter from '../assets/social/twitter.svg'
+import vimeo from '../assets/social/vimeo.svg'
 
 const Footer = class extends React.Component {
   render() {

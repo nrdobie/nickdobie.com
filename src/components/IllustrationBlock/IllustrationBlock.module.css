@@ -1,0 +1,51 @@
+.IllustrationBlock {
+  display: grid;
+  grid-template-areas: "title" "text";
+  grid-column-gap: 5rem;
+  grid-row-gap: 1rem;
+}
+
+.IllustrationBlock.right {
+  grid-template-areas: "title" "text";
+}
+
+.IllustrationBlock_title {
+  font-size: 2rem;
+  grid-area: title;
+}
+
+.IllustrationBlock_illustration {
+  align-self: center;
+  display: none;
+  grid-area: illustration;
+}
+
+.IllustrationBlock_illustration img {
+  max-width: 100%;
+}
+
+.IllustrationBlock_text {
+  grid-area: text;
+}
+
+
+@media (min-width: 800px) {
+  .IllustrationBlock {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+      "title title"
+      "illustration text";
+  }
+  
+  .IllustrationBlock.right {
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+      "title title"
+      "text illustration";
+  
+  }
+
+  .IllustrationBlock_illustration {
+    display: block;
+  }
+}
