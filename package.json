@@ -59,7 +59,7 @@
     "start": "run-p start:**",
     "build:app": "npm run clean && gatsby build",
     "build:lambda": "netlify-lambda build src/lambda",
-    "build:typed-styles": "tcm --pattern src/**/*.module.css --watch",
+    "build:typed-styles": "tcm --pattern src/**/*.module.css",
     "build": "run-p build:**",
     "develop": "npm run clean && gatsby develop",
     "serve": "gatsby serve",
