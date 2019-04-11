@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
-import "../styles/index.css"
+import "../styles/index.scss"
 import 'prismjs/themes/prism-solarizedlight.css'
 import "prismjs/plugins/line-numbers/prism-line-numbers.css"
 import "./prismjs.css"
@@ -11,7 +11,7 @@ import useSiteMetadata from './SiteMetadata'
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
   return (
-    <div>
+    <div style={{backgroundColor: 'var(--colors-background)'}}>
       <Helmet>
         <html lang="en" />
         <title>{title}</title>

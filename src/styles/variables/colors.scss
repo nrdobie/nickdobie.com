@@ -1,0 +1,101 @@
+:root {
+  /* Palette */
+  --palette-white: var(--oc-gray-0);
+  --palette-white-rgb: var(--oc-gray-0-rgb);
+  --palette-black: var(--oc-gray-9);
+  --palette-black-rgb: var(--oc-gray-9-rgb);
+  --palette-gray-dark: var(--oc-gray-7);
+  --palette-gray-dark-rgb: var(--oc-gray-7-rgb);
+  --palette-gray-light: var(--oc-gray-2);
+  --palette-gray-light-rgb: var(--oc-gray-2-rgb);
+  --palette-gray-lightest: var(--oc-gray-1);
+  --palette-gray-lightest-rgb: var(--oc-gray-1-rgb);
+
+  --palette-primary-dark: var(--oc-orange-9);
+  --palette-primary-dark-rgb: var(--oc-orange-9-rgb);
+  --palette-primary: var(--oc-orange-7);
+  --palette-primary-rgb: var(--oc-orange-7-rgb);
+  --palette-primary-light: var(--oc-orange-5);
+  --palette-primary-light-rgb: var(--oc-orange-5-rgb);
+  --palette-primary-text: var(--oc-orange-1);
+  --palette-primary-text-rgb: var(--oc-orange-1-rgb);
+  --palette-primary-white: var(--oc-orange-0);
+  --palette-primary-white-rgb: var(--oc-orange-0-rgb);
+
+  --palette-secondary-dark: var(--oc-cyan-9);
+  --palette-secondary-dark-rgb: var(--oc-cyan-9-rgb);
+  --palette-secondary: var(--oc-cyan-7);
+  --palette-secondary-rgb: var(--oc-cyan-7-rgb);
+  --palette-secondary-light: var(--oc-cyan-5);
+  --palette-secondary-light-rgb: var(--oc-cyan-5-rgb);
+  --palette-secondary-text: var(--oc-cyan-1);
+  --palette-secondary-text-rgb: var(--oc-cyan-1-rgb);
+  --palette-secondary-white: var(--oc-cyan-0);
+  --palette-secondary-white-rgb: var(--oc-cyan-0-rgb);
+
+  /* Color */
+  --colors-background: var(--palette-white);
+  --colors-background-rgb: var(--palette-white-rgb);
+  --colors-text-heading: var(--palette-black);
+  --colors-text-heading-rgb: var(--palette-black-rgb);
+  --colors-text-body: var(--palette-gray-dark);
+  --colors-text-body-rgb: var(--palette-gray-dark-rgb);
+
+  --colors-inverted-background: var(--palette-black);
+  --colors-inverted-background-rgb: var(--palette-black-rgb);
+  --colors-inverted-text-heading: var(--palette-lightest);
+  --colors-inverted-text-heading-rgb: var(--palette-lightest-rgb);
+  --colors-inverted-text-body: var(--palette-gray-light);
+  --colors-inverted-text-body-rgb: var(--palette-gray-light-rgb);
+}
+
+.use-theme-primary {
+  /* Color */
+  --colors-background: var(--palette-primary-dark);
+  --colors-background-rgb: var(--palette-primary-dark-rgb);
+  --colors-text-heading: var(--palette-primary-white);
+  --colors-text-heading-rgb: var(--palette-primary-white-rgb);
+  --colors-text-body: var(--palette-primary-text);
+  --colors-text-body-rgb: var(--palette-primary-text-rgb);
+
+  --colors-inverted-background: var(--palette-primary-white);
+  --colors-inverted-background-rgb: var(--palette-primary-white-rgb);
+  --colors-inverted-text-heading: var(--palette-primary-dark);
+  --colors-inverted-text-heading-rgb: var(--palette-primary-dark-rgb);
+  --colors-inverted-text-body: var(--palette-primary);
+  --colors-inverted-text-body-rgb: var(--palette-primary-rgb);
+}
+
+.use-theme-secondary {
+  /* Color */
+  --colors-background: var(--palette-secondary-dark);
+  --colors-background-rgb: var(--palette-secondary-dark-rgb);
+  --colors-text-heading: var(--palette-secondary-white);
+  --colors-text-heading-rgb: var(--palette-secondary-white-rgb);
+  --colors-text-body: var(--palette-secondary-text);
+  --colors-text-body-rgb: var(--palette-secondary-text-rgb);
+
+  --colors-inverted-background: var(--palette-secondary-white);
+  --colors-inverted-background-rgb: var(--palette-secondary-white-rgb);
+  --colors-inverted-text-heading: var(--palette-secondary-dark);
+  --colors-inverted-text-heading-rgb: var(--palette-secondary-dark-rgb);
+  --colors-inverted-text-body: var(--palette-secondary);
+  --colors-inverted-text-body-rgb: var(--palette-secondary-rgb);
+}
+
+.use-theme-dark {
+  /* Color */
+  --colors-background: var(--palette-black);
+  --colors-background-rgb: var(--palette-black-rgb);
+  --colors-text-heading: var(--palette-lightest);
+  --colors-text-heading-rgb: var(--palette-lightest-rgb);
+  --colors-text-body: var(--palette-gray-light);
+  --colors-text-body-rgb: var(--palette-gray-light-rgb);
+  
+  --colors-inverted-background: var(--palette-white);
+  --colors-inverted-background-rgb: var(--palette-white-rgb);
+  --colors-inverted-text-heading: var(--palette-black);
+  --colors-inverted-text-heading-rgb: var(--palette-black-rgb);
+  --colors-inverted-text-body: var(--palette-gray-dark);
+  --colors-inverted-text-body-rgb: var(--palette-gray-dark-rgb);
+}

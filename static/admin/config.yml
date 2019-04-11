@@ -58,12 +58,12 @@ collections:
             widget: list
             allow_add: true
             fields:
-              - label: Illustration
-                name: illustration
-                widget: image
               - label: Skill
                 name: title
                 widget: string
               - label: Text
                 name: text
                 widget: text
+              - label: Illustration
+                name: illustration
+                widget: image

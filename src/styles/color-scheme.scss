@@ -1,0 +1,12 @@
+body, [class*="use-theme-"] {
+  background-color: var(--colors-background);
+  color: var(--colors-text-body);
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--colors-text-heading);
+  }
+}
+
+body {
+  background-color: var(--colors-inverted-background);
+}

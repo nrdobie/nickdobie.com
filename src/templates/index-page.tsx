@@ -38,6 +38,26 @@ export const IndexPageTemplate: React.SFC<IIndexPageTemplateProps> = ({
     <Section>
       <IllustrationBlock title={about.title} text={about.text} illustration={about.illustration.publicURL} side="right" />
     </Section>
+    <Section theme="primary">
+      <Container>
+        <h2>My Best Skills</h2>
+      </Container>
+    </Section>
+    <Section>
+      <Container>
+        <h2>My Projects</h2>
+      </Container>
+    </Section>
+    <Section theme="secondary">
+      <Container>
+        <h2>Contact Me</h2>
+      </Container>
+    </Section>
+    <Section theme="dark">
+      <Container>
+        <h2>footer</h2>
+      </Container>
+    </Section>
   </React.Fragment>
 );
 
@@ -47,11 +67,7 @@ export const IndexPage: React.SFC<{ data: any }> = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
-        title={frontmatter.title}
-        heroImage={frontmatter.heroImage}
-        subtitle={frontmatter.subtitle}
-        heroImageCredit={frontmatter.heroImageCredit}
-        about={frontmatter.about}
+        {...frontmatter}
       />
     </Layout>
   );
@@ -72,11 +88,18 @@ export const pageQuery = graphql`
         heroImage {
           childImageSharp {
             fluid(maxWidth: 2048, quality: 100) {
-              ...GatsbyImageSharpFluid
+              src
             }
           }
         }
         about {
+          title
+          text
+          illustration {
+            publicURL
+          }
+        }
+        highlights {
           title
           text
           illustration {
