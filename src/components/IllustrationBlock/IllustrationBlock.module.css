@@ -15,7 +15,7 @@
 }
 
 .IllustrationBlock_illustration {
-  color: var(--palette-secondary);
+  color: var(--colors-accent-background);
   align-self: center;
   justify-self: center;
   text-align: center;

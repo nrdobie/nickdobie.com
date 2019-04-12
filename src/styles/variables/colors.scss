@@ -47,6 +47,13 @@
   --colors-inverted-text-heading-rgb: var(--palette-lightest-rgb);
   --colors-inverted-text-body: var(--palette-gray-light);
   --colors-inverted-text-body-rgb: var(--palette-gray-light-rgb);
+
+  --colors-accent-background: var(--palette-primary-dark);
+  --colors-accent-background-rgb: var(--palette-primary-dark-rgb);
+  --colors-accent-text-heading: var(--palette-primary-white);
+  --colors-accent-text-heading-rgb: var(--palette-primary-white-rgb);
+  --colors-accent-text-body: var(--palette-primary-text);
+  --colors-accent-text-body-rgb: var(--palette-primary-text-rgb);
 }
 
 .use-theme-primary {
@@ -64,6 +71,13 @@
   --colors-inverted-text-heading-rgb: var(--palette-primary-dark-rgb);
   --colors-inverted-text-body: var(--palette-primary);
   --colors-inverted-text-body-rgb: var(--palette-primary-rgb);
+
+  --colors-accent-background: var(--palette-secondary-dark);
+  --colors-accent-background-rgb: var(--palette-secondary-dark-rgb);
+  --colors-accent-text-heading: var(--palette-secondary-white);
+  --colors-accent-text-heading-rgb: var(--palette-secondary-white-rgb);
+  --colors-accent-text-body: var(--palette-secondary-text);
+  --colors-accent-text-body-rgb: var(--palette-secondary-text-rgb);
 }
 
 .use-theme-secondary {
@@ -81,6 +95,13 @@
   --colors-inverted-text-heading-rgb: var(--palette-secondary-dark-rgb);
   --colors-inverted-text-body: var(--palette-secondary);
   --colors-inverted-text-body-rgb: var(--palette-secondary-rgb);
+
+  --colors-accent-background: var(--palette-primary-dark);
+  --colors-accent-background-rgb: var(--palette-primary-dark-rgb);
+  --colors-accent-text-heading: var(--palette-primary-white);
+  --colors-accent-text-heading-rgb: var(--palette-primary-white-rgb);
+  --colors-accent-text-body: var(--palette-primary-text);
+  --colors-accent-text-body-rgb: var(--palette-primary-text-rgb);
 }
 
 .use-theme-dark {
@@ -91,11 +112,18 @@
   --colors-text-heading-rgb: var(--palette-lightest-rgb);
   --colors-text-body: var(--palette-gray-light);
   --colors-text-body-rgb: var(--palette-gray-light-rgb);
-  
+
   --colors-inverted-background: var(--palette-white);
   --colors-inverted-background-rgb: var(--palette-white-rgb);
   --colors-inverted-text-heading: var(--palette-black);
   --colors-inverted-text-heading-rgb: var(--palette-black-rgb);
   --colors-inverted-text-body: var(--palette-gray-dark);
   --colors-inverted-text-body-rgb: var(--palette-gray-dark-rgb);
+
+  --colors-accent-background: var(--palette-primary-dark);
+  --colors-accent-background-rgb: var(--palette-primary-dark-rgb);
+  --colors-accent-text-heading: var(--palette-primary-white);
+  --colors-accent-text-heading-rgb: var(--palette-primary-white-rgb);
+  --colors-accent-text-body: var(--palette-primary-text);
+  --colors-accent-text-body-rgb: var(--palette-primary-text-rgb);
 }

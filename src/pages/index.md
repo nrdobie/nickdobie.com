@@ -24,17 +24,19 @@ about:
     nulla at nunc pharetra suscipit eu ac mauris.
   title: About Me
 highlights:
-  - illustration: NodeJsIcon
-    text: My primary specialty is in JavaScript development both front and backend.
-    title: JavaScript Development
-  - illustration: ReactJsIcon
-    text: My primary specialty is in JavaScript development both front and backend.
-    title: React Development
-  - illustration: DockerIcon
-    text: My primary specialty is in JavaScript development both front and backend.
-    title: Cloud Development
-  - illustration: GraphqlIcon
-    text: My primary specialty is in JavaScript development both front and backend.
-    title: GraphQL Development
+  title: My Skills
+  items:
+    - illustration: NodeJsIcon
+      text: My primary specialty is in JavaScript development both front and backend.
+      title: JavaScript Development
+    - illustration: ReactJsIcon
+      text: My primary specialty is in JavaScript development both front and backend.
+      title: React Development
+    - illustration: DockerIcon
+      text: My primary specialty is in JavaScript development both front and backend.
+      title: Cloud Development
+    - illustration: GraphqlIcon
+      text: My primary specialty is in JavaScript development both front and backend.
+      title: GraphQL Development
 ---
 

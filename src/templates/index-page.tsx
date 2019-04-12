@@ -20,11 +20,14 @@ interface IIndexPageTemplateProps {
     text: string;
     illustration: string;
   };
-  highlights: Array<{
+  highlights: {
     title: string;
-    text: string;
-    illustration: string;
-  }>;
+    items: Array<{
+      title: string;
+      text: string;
+      illustration: string;
+    }>;
+  };
 }
 
 export const IndexPageTemplate: React.SFC<IIndexPageTemplateProps> = ({
@@ -52,9 +55,9 @@ export const IndexPageTemplate: React.SFC<IIndexPageTemplateProps> = ({
     </Section>
     <Section theme="primary">
       <Container>
-        <h2>My Best Skills</h2>
+        <h2>{highlights.title}</h2>
         <GridList>
-          {highlights.map((highlight, index) => (
+          {highlights.items.map((highlight, index) => (
             <GridList.Item key={`highlight_${index}`}>
               <IconBlock {...highlight} />
             </GridList.Item>
@@ -106,8 +109,11 @@ export const pageQuery = graphql`
         }
         highlights {
           title
-          text
-          illustration
+          items {
+            title
+            text
+            illustration
+          }
         }
       }
     }
