@@ -75,7 +75,7 @@ module.exports = {
       options: {
         manualInit: true,
         modulePath: `${__dirname}/src/cms/cms.ts`,
-        publicPath: '/___admin'
+        publicPath: '/admin'
       },
     },
     {
