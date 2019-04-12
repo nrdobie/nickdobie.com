@@ -5,15 +5,21 @@ import * as React from 'react'
 import styles from './HeroImage.module.css'
 import { Container } from '../Container';
 
-type SharpFluidImage = string | { childImageSharp: { fluid: { src: string } }}
+type SharpFluidImage = string | { childImageSharp: { fluid: { src: string, tracedSVG?: string } }}
 
 type Credit = { link: string, author: string }
 
+function createBackgroundImage(image: SharpFluidImage) {
+  return [
+    `linear-gradient(rgba(var(--palette-black-rgb), 0.75), rgba(var(--palette-black-rgb), 0.75))`,
+    `url(${typeof image !== 'string' ? image.childImageSharp.fluid.src : image})`
+  ].join(', ')
+}
+
 export const HeroImage: React.SFC<{ image: SharpFluidImage, title: string, subtitle?: string, credit?: Credit }>  = ({ image, title, subtitle, credit }) => (
-  <div className={styles.HeroImage}>
-    <div className={styles.HeroImage_background} style={{ 
-      backgroundImage: `url(${typeof image !== 'string' ? image.childImageSharp.fluid.src : image}` 
-    }} />
+  <div className={styles.HeroImage} style={{
+    backgroundImage: createBackgroundImage(image)
+  }}>
     <Container>
       <h1 className={styles.HeroImage_title}>{title}</h1>
       {!!subtitle && (

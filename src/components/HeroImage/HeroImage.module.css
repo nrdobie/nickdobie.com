@@ -1,24 +1,12 @@
 .HeroImage {
   padding: 3rem 0;
-  position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 2;
-}
-
-.HeroImage_background {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
   background-size: cover;
   background-attachment: fixed;
   background-position: center center;
-  filter: saturate(25%);
-  z-index: -1;
 }
 
 .HeroImage_title {
@@ -46,10 +34,9 @@
 
 .HeroImage_credit {
   display: none;
-  position: absolute;
   z-index: 1;
-  bottom: 0;
-  right: 0;
+  align-self: flex-end;
+  justify-self: flex-end;
   background: rgba(var(--colors-inverted-background-rgb), 0.5);
   color: var(--colors-inverted-text-body);
   padding: 0.5rem 1rem;
@@ -61,7 +48,7 @@
 }
 
 .HeroImage_credit:hover,
-.HeroImage_credit:focus {  
+.HeroImage_credit:focus {
   background: rgba(var(--colors-inverted-background-rgb), 1);
 }
 
