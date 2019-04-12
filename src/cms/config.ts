@@ -89,6 +89,45 @@ export const config = {
           ]
         }
       ]
+    },
+    {
+      name: 'data',
+      label: 'Data',
+      extension: 'yml',
+      preview_path: false,
+      files: [
+        {
+          file: "src/_data/contact.yml",
+          label: "Contact",
+          name: "contact",
+          fields: [
+            {
+              label: 'Accounts',
+              name: 'accounts',
+              widget: 'list',
+              allow_add: true,
+              fields: [
+                {
+                  label: 'Type',
+                  name: 'type',
+                  widget: 'select',
+                  options: [
+                    { label: 'Phone', value: 'phone' },
+                    { label: 'E-Mail', value: 'email' },
+                    { label: 'GitHub', value: 'github' },
+                    { label: 'CodePen', value: 'codepen' },
+                  ]
+                },
+                {
+                  label: 'Account',
+                  name: 'account',
+                  widget: 'string'
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 };

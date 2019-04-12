@@ -5543,6 +5543,11 @@ find-versions@^3.0.0:
     array-uniq "^2.0.0"
     semver-regex "^2.0.0"
 
+firacode@^1.206.0:
+  version "1.206.0"
+  resolved "https://registry.yarnpkg.com/firacode/-/firacode-1.206.0.tgz#00a85b70f731bb29d968f4fa583c6b50049b7849"
+  integrity sha512-+Gw/rm0O8vuAvANMWOFgZNJqPHZN1nYQpv4ptUjfwJLMDTzcLOFVK73LKaTC/nXRFUDV9dRi8kBQilhEXVVI+A==
+
 flat-cache@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/flat-cache/-/flat-cache-2.0.1.tgz#5d296d6f04bda44a4630a301413bdbc2ec085ec0"

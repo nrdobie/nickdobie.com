@@ -10,6 +10,7 @@ init({config})
 // @ts-ignore
 import styles from '!css-loader!sass-loader!../styles/index.scss'
 CMS.registerPreviewStyle(styles.toString(), { raw: true })
+CMS.registerPreviewStyle(`.frame-content { background: var(--colors-background); }`, { raw: true })
 
 CMS.registerPreviewTemplate('index', IndexPagePreview)
 // CMS.registerPreviewTemplate('about', AboutPagePreview)

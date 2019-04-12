@@ -14,7 +14,6 @@
   background: var(--palette-primary-dark);
   padding: 1rem;
   color: var(--palette-primary-white);
-  text-transform: uppercase;
   letter-spacing: 0.05em;
   font-weight: bold;
   font-size: 2rem;
@@ -26,7 +25,6 @@
   background: var(--palette-secondary-dark);
   padding: 0.5rem 1rem;
   color: var(--palette-secondary-white);
-  text-transform: lowercase;
   letter-spacing: 0.05em;
   font-size: 1rem;
   font-weight: normal;

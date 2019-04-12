@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
-title: Nicholas Dobie
-subtitle: Front-End Web Developer from Minneapolis
+title: NicholasDobie
+subtitle: = new SoftwareEngineer()
 heroImage: /assets/markus-spiske-207946-unsplash.jpg
 heroImageCredit:
   author: Markus Spiske
@@ -22,9 +22,9 @@ about:
     tempor egestas rhoncus in nisl. Phasellus sagittis lacus sed est placerat,
     quis ornare velit fermentum. Vestibulum sit amet pulvinar nulla. Nunc in
     nulla at nunc pharetra suscipit eu ac mauris.
-  title: About Me
+  title: <about-me>
 highlights:
-  title: My Skills
+  title: <highlights>
   items:
     - illustration: NodeJsIcon
       text: My primary specialty is in JavaScript development both front and backend.
