@@ -45,6 +45,7 @@
   font-size: 0.8rem;
   transition: background 100ms ease-in-out;
   text-align: center;
+  white-space: nowrap;
 }
 
 .HeroImage_credit:hover,

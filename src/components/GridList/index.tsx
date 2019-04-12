@@ -4,16 +4,16 @@ import styles from "./GridList.module.css";
 
 interface IGridListProps {
   children: React.ReactNode;
-  columns?: number;
+  itemMinWidth?: string;
 }
 
 export const GridList: React.SFC<IGridListProps> & {
   Item: typeof GridListItem;
-} = ({ children, columns }) => (
+} = ({ children, itemMinWidth }) => (
   <div
     className={styles.GridList}
     style={{
-      "--gl-columns": columns || 3
+      "--gl-min-width": itemMinWidth || '20rem'
     }}
   >
     {children}

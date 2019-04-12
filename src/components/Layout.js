@@ -7,6 +7,8 @@ import 'prismjs/themes/prism-solarizedlight.css'
 import "prismjs/plugins/line-numbers/prism-line-numbers.css"
 import "./prismjs.css"
 import useSiteMetadata from './SiteMetadata'
+import { Section } from './Section';
+import { Container } from './Container';
 
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata()
@@ -48,8 +50,12 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:image" content="/img/og-image.jpg" />
       </Helmet>
       {/* <Navbar /> */}
-      <div>{children}</div>
-      <Footer />
+      {children}
+    <Section theme="dark">
+      <Container>
+        <h2>&lt;/profile&gt;</h2>
+      </Container>
+    </Section>
     </div>
   )
 }

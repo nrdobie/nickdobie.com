@@ -1,15 +1,9 @@
 .GridList {
-  --gl-width: calc(((75rem - 3rem) / var(--gl-columns)));
   display: grid;
-  grid-template-columns: repeat(auto-fill, var(--gl-width));
-  grid-gap: 1rem;
-  justify-content: space-between;
+  grid-template-columns: repeat(auto-fill, minmax(var(--gl-min-width), 1fr));
+  grid-column-gap: 1rem;
+  grid-row-gap: 2rem;
 }
 
 .GridList_item {
-  background-color: red;
-}
-
-.GridList_item:nth-child(odd) {
-  background: blue;
 }
