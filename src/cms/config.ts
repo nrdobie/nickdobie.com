@@ -94,7 +94,6 @@ export const config = {
       name: 'data',
       label: 'Data',
       extension: 'yml',
-      preview_path: false,
       files: [
         {
           file: "src/_data/contact.yml",
