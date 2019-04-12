@@ -1,0 +1,9 @@
+accounts:
+  - account: +1 (612) 800-3253
+    type: phone
+  - account: nick@dobie.me
+    type: email
+  - account: nrdobie
+    type: github
+  - account: nrdobie
+    type: codepen
