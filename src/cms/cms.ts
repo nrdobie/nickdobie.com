@@ -5,7 +5,7 @@ import CMS, { init } from 'netlify-cms'
 import {IndexPagePreview} from './preview-templates/IndexPagePreview'
 import { config } from './config';
 
-init(config)
+init({config})
 
 // @ts-ignore
 import styles from '!css-loader!sass-loader!../styles/index.scss'
