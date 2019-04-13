@@ -30,6 +30,14 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
+        path: `${__dirname}/src/_data`,
+        name: 'data'
+      },
+    },
+    'gatsby-transformer-yaml',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
         path: `${__dirname}/src/assets`,
         name: 'images',
       },

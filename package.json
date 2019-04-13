@@ -35,6 +35,8 @@
     "gatsby-source-filesystem": "^2.0.26",
     "gatsby-transformer-remark": "^2.3.4",
     "gatsby-transformer-sharp": "^2.1.9",
+    "gatsby-transformer-yaml": "^2.1.11",
+    "gatsby-transformer-yaml-plus": "^0.1.0",
     "json5": "^2.1.0",
     "lodash": "^4.17.11",
     "lodash-webpack-plugin": "^0.11.4",

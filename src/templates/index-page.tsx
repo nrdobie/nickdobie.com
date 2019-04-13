@@ -67,7 +67,7 @@ export const IndexPageTemplate: React.SFC<IIndexPageTemplateProps> = ({
     </Section>
     <Section>
       <Container>
-        <h2>Contact Me</h2>
+        <h2>&lt;contact-me&gt;</h2>
       </Container>
     </Section>
   </React.Fragment>

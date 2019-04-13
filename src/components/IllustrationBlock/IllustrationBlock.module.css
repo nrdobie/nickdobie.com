@@ -23,7 +23,7 @@
 }
 
 .IllustrationBlock_illustration svg {
-  max-width: 50%;
+  width: 50%;
 }
 
 .IllustrationBlock_text {
@@ -46,6 +46,6 @@
   }
 
   .IllustrationBlock_illustration svg {
-    max-width: 100%;
+    width: 100%;
   }
 }

@@ -22,7 +22,7 @@ export const IconBlock: React.SFC<IIconBlockProps> = ({
         <Illustration width="100%" />
       </div>
       <h3>{title}</h3>
-      <p>{text}</p>
+      <p><a href="javascript:void">{text}</a>{text}</p>
     </div>
   );
 };

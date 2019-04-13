@@ -94,15 +94,16 @@ export const config = {
       name: 'data',
       label: 'Data',
       extension: 'yml',
+      preview: false,
       files: [
         {
-          file: "src/_data/contact.yml",
+          file: "src/_data/contacts/index.yml",
           label: "Contact",
           name: "contact",
           fields: [
             {
               label: 'Accounts',
-              name: 'accounts',
+              name: '',
               widget: 'list',
               allow_add: true,
               fields: [
@@ -111,6 +112,7 @@ export const config = {
                   name: 'type',
                   widget: 'select',
                   options: [
+                    { label: 'Location', value: 'location' },
                     { label: 'Phone', value: 'phone' },
                     { label: 'E-Mail', value: 'email' },
                     { label: 'GitHub', value: 'github' },

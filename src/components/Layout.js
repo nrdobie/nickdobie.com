@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Footer from '../components/Footer'
+import {Footer} from '../components/Footer'
 import Navbar from '../components/Navbar'
 import "../styles/index.scss"
 import 'prismjs/themes/prism-solarizedlight.css'
@@ -51,11 +51,7 @@ const TemplateWrapper = ({ children }) => {
       </Helmet>
       {/* <Navbar /> */}
       {children}
-    <Section theme="dark">
-      <Container>
-        <h2>&lt;/profile&gt;</h2>
-      </Container>
-    </Section>
+    <Footer />
     </div>
   )
 }

@@ -1,0 +1,21 @@
+$transition: all 250ms var(--ease-in-out-circ);
+
+a:link:not(.no-style), a:visited:not(.no-style) {
+  color: var(--colors-text-body);
+  transition: $transition;
+  padding: 0 0.15em;
+  position: relative;
+  background-image: linear-gradient(
+    to right,
+    var(--colors-accent-background) 0% 100%
+  );
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: $transition;
+}
+
+a:hover:not(.no-style), a:focus:not(.no-style) {
+  color: var(--colors-accent-text-body);
+  background-size: 100% 100%;
+}

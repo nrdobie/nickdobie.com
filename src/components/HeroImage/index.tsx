@@ -1,5 +1,6 @@
 import { faCamera } from '@fortawesome/pro-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import classnames from 'classnames'
 import * as React from 'react'
 
 import styles from './HeroImage.module.css'
@@ -30,7 +31,7 @@ export const HeroImage: React.SFC<{ image: SharpFluidImage, title: string, subti
       )}
     </Container>
     {!!credit &&
-      <a className={styles.HeroImage_credit} href={credit.link} target="_blank">
+      <a className={classnames('no-style', styles.HeroImage_credit)} href={credit.link} target="_blank">
       <FontAwesomeIcon icon={faCamera} /> {credit.author}
       </a>}
   </div>

@@ -1,8 +1,10 @@
 accounts:
-  - account: +1 (612) 800-3253
-    type: phone
+  - account: Minneapolis, Minnesota, USA
+    type: location
   - account: nick@dobie.me
     type: email
+  - account: +1 (612) 800-3253
+    type: phone
   - account: nrdobie
     type: github
   - account: nrdobie
