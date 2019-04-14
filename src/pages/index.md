@@ -38,11 +38,6 @@ highlights:
         performance of an SPA. Today my framework of choice is React and have
         been coaching others on how to program scalable React applications.
       title: Single Page Applications
-    - illustration: GraphqlIcon
-      text: >-
-        My primary specialty is in JavaScript development both front and
-        backend.
-      title: Fast Backends
     - illustration: DockerIcon
       text: >-
         Building a feature rich application is important, but if no one can
@@ -50,11 +45,6 @@ highlights:
         have learned how to not only write feature rich  applications but
         architect them in a way that allows them to scale to meet demands.
       title: Scalable Deployments
-    - illustration: Bug
-      text: >-
-        I have a highly analytical mind which I find helps me debug code
-        extremely fast.
-      title: Debugging
   title: <highlights>
 ---
 
