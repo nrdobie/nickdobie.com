@@ -103,7 +103,7 @@ export const config = {
           fields: [
             {
               label: 'Accounts',
-              name: '',
+              name: 'accounts',
               widget: 'list',
               allow_add: true,
               fields: [
