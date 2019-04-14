@@ -9,6 +9,10 @@ import { Section } from "../components/Section";
 import { GridList } from "../components/GridList";
 import { illustrations } from "../illustrations";
 import { IconBlock } from "../components/IconBlock";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone } from "@fortawesome/pro-solid-svg-icons";
+import { SocialBlock } from "../components/SocialBlock";
+import { SocialType } from "../services/social";
 
 interface IIndexPageTemplateProps {
   title: string;
@@ -28,7 +32,15 @@ interface IIndexPageTemplateProps {
       illustration: string;
     }>;
   };
+  contacts: {
+    accounts: Array<{
+      type: SocialType
+      account: string
+    }>
+  }
 }
+
+const MinnesotaMap = illustrations.MinneapolisMap
 
 export const IndexPageTemplate: React.SFC<IIndexPageTemplateProps> = ({
   title,
@@ -36,7 +48,8 @@ export const IndexPageTemplate: React.SFC<IIndexPageTemplateProps> = ({
   heroImage,
   heroImageCredit,
   about,
-  highlights
+  highlights,
+  contacts
 }) => (
   <React.Fragment>
     <HeroImage
@@ -48,10 +61,8 @@ export const IndexPageTemplate: React.SFC<IIndexPageTemplateProps> = ({
     <Section>
       <IllustrationBlock
         title={about.title}
-        text={about.text}
         illustration={about.illustration}
-        side="right"
-      />
+        side="right"><p>{about.text}</p></IllustrationBlock>
     </Section>
     <Section theme="primary">
       <Container>
@@ -67,7 +78,13 @@ export const IndexPageTemplate: React.SFC<IIndexPageTemplateProps> = ({
     </Section>
     <Section>
       <Container>
-        <h2>&lt;contact-me&gt;</h2>
+        <IllustrationBlock title="<contact-me>" illustration="MinneapolisMap">
+          {
+            contacts.accounts.map(account => 
+              <SocialBlock key={`${account.type}_${account.account}`} {...account} />  
+            )
+          }
+        </IllustrationBlock>
       </Container>
     </Section>
   </React.Fragment>
@@ -78,7 +95,7 @@ export const IndexPage: React.SFC<{ data: any }> = ({ data }) => {
 
   return (
     <Layout>
-      <IndexPageTemplate {...frontmatter} />
+      <IndexPageTemplate {...frontmatter} contacts={data.contactsYaml} />
     </Layout>
   );
 };
@@ -115,6 +132,12 @@ export const pageQuery = graphql`
             illustration
           }
         }
+      }
+    }
+    contactsYaml {
+      accounts {
+        account
+        type
       }
     }
   }

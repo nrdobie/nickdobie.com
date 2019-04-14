@@ -8,14 +8,14 @@ import { illustrations } from '../../illustrations';
 interface IIllustrationBlockProps {
   illustration: string;
   title: string;
-  text: string;
+  children: React.ReactNode;
   side?: "left" | "right";
 }
 
 export const IllustrationBlock: React.SFC<IIllustrationBlockProps> = ({
   illustration,
   title,
-  text,
+  children,
   side
 }) => {
   const Illustration = illustrations[illustration]
@@ -27,7 +27,7 @@ export const IllustrationBlock: React.SFC<IIllustrationBlockProps> = ({
       })}
     >
       <h2 className={styles.IllustrationBlock_title}>{title}</h2>
-      <div className={styles.IllustrationBlock_text}>{text}</div>
+      <div className={styles.IllustrationBlock_text}>{children}</div>
       <div className={styles.IllustrationBlock_illustration}>
         <Illustration />
       </div>

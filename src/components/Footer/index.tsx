@@ -1,14 +1,17 @@
+import classnames from "classnames";
 import * as React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { Section } from "../Section";
 import { Container } from "../Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faMobileAndroidAlt,
+  faPhone,
   faMapMarkerAlt,
   faAt
 } from "@fortawesome/pro-solid-svg-icons";
 import { faGithub, faCodepen } from "@fortawesome/free-brands-svg-icons";
+import styles from "./Footer.module.css";
+import { getIcon, getUrl, getDisplay } from "../../services/social";
 
 export const Footer: React.SFC = () => {
   const data = useStaticQuery(graphql`
@@ -23,19 +26,39 @@ export const Footer: React.SFC = () => {
   `);
 
   return (
-    <Section theme='dark'>
+    <Section theme="dark">
       <Container>
-        <h3>Nicholas Dobie</h3>
-        <ul>
-          {data.contactsYaml.accounts.map(account => (
-            <li key={`${account.type}_${account.account}`}>
-              <SocialIcon type={account.type} /> <SocialLink {...account} />
-            </li>
-          ))}
-        </ul>
-        {data.contactsYaml.accounts.map(account => (
-          <SocialButton key={`button_${account.type}_${account.account}`} {...account} />
-        ))}
+        <div className={styles.Footer}>
+          <div>
+            <h3>Nicholas Dobie</h3>
+            <ul>
+              {data.contactsYaml.accounts.map(({ type, account }) => (
+                <li key={`${type}_${account}`}>
+                  <FontAwesomeIcon fixedWidth icon={getIcon(type)} />{" "}
+                  <a href={getUrl(type, account)} target="_blank">
+                    {getDisplay(type, account)}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className={styles.Footer_social}>
+            {data.contactsYaml.accounts
+              .filter(
+                account => !["location"].some(type => type === account.type)
+              )
+              .map(({ type, account }) => (
+                <a
+                  key={`button_${account.type}_${account.account}`}
+                  className={classnames("no-style", styles.Footer_socialButton)}
+                  target="_blank"
+                  href={getUrl(type, account)}
+                >
+                  <FontAwesomeIcon fixedWidth icon={getIcon(type)} />
+                </a>
+              ))}
+          </div>
+        </div>
       </Container>
     </Section>
   );
@@ -46,7 +69,7 @@ const SocialIcon: React.SFC<{ type: string }> = ({ type }) => {
     case "email":
       return <FontAwesomeIcon fixedWidth icon={faAt} />;
     case "phone":
-      return <FontAwesomeIcon fixedWidth icon={faMobileAndroidAlt} />;
+      return <FontAwesomeIcon fixedWidth icon={faPhone} />;
     case "github":
       return <FontAwesomeIcon fixedWidth icon={faGithub} />;
     case "codepen":
@@ -62,13 +85,29 @@ const SocialLink: React.SFC<{ type: string; account: string }> = ({
 }) => {
   switch (type) {
     case "email":
-      return <a target="_blank" href={`mailto:${account}`}>{account}</a>;
+      return (
+        <a target="_blank" href={`mailto:${account}`}>
+          {account}
+        </a>
+      );
     case "phone":
-      return <a target="_blank" href={`tel:${account.replace(/[^\d\+]/g, "")}`}>{account}</a>;
+      return (
+        <a target="_blank" href={`tel:${account.replace(/[^\d\+]/g, "")}`}>
+          {account}
+        </a>
+      );
     case "github":
-      return <a target="_blank" href={`https://github.com/${account}`}>github.com/{account}</a>;
+      return (
+        <a target="_blank" href={`https://github.com/${account}`}>
+          github.com/{account}
+        </a>
+      );
     case "codepen":
-      return <a target="_blank" href={`https://codepen.io/${account}`}>codepen.io/{account}</a>;
+      return (
+        <a target="_blank" href={`https://codepen.io/${account}`}>
+          codepen.io/{account}
+        </a>
+      );
     default:
       return <span>{account}</span>;
   }
@@ -81,19 +120,31 @@ const SocialButton: React.SFC<{ type: string; account: string }> = ({
   switch (type) {
     case "email":
       return (
-        <a target="_blank" className="no-style" href={`mailto:${account}`} title={`${account}`}>
+        <a
+          target="_blank"
+          className={classnames("no-style", styles.Footer_socialButton)}
+          href={`mailto:${account}`}
+          title={`${account}`}
+        >
           <SocialIcon type="email" />
         </a>
       );
     case "phone":
       return (
-        <a target="_blank" className="no-style" href={`tel:${account.replace(/[^\d\+]/g, "")}`} title={`${account}`}>
+        <a
+          target="_blank"
+          className={classnames("no-style", styles.Footer_socialButton)}
+          href={`tel:${account.replace(/[^\d\+]/g, "")}`}
+          title={`${account}`}
+        >
           <SocialIcon type="phone" />
         </a>
       );
     case "github":
       return (
-        <a target="_blank" className="no-style"
+        <a
+          target="_blank"
+          className={classnames("no-style", styles.Footer_socialButton)}
           href={`https://github.com/${account}`}
           title={`github.com/${account}`}
         >
@@ -102,7 +153,9 @@ const SocialButton: React.SFC<{ type: string; account: string }> = ({
       );
     case "codepen":
       return (
-        <a target="_blank" className="no-style"
+        <a
+          target="_blank"
+          className={classnames("no-style", styles.Footer_socialButton)}
           href={`https://codepen.io/${account}`}
           title={`codepen.io/${account}`}
         >

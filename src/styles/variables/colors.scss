@@ -11,27 +11,27 @@
   --palette-gray-lightest: var(--oc-gray-1);
   --palette-gray-lightest-rgb: var(--oc-gray-1-rgb);
 
-  --palette-primary-dark: var(--oc-orange-9);
-  --palette-primary-dark-rgb: var(--oc-orange-9-rgb);
-  --palette-primary: var(--oc-orange-7);
-  --palette-primary-rgb: var(--oc-orange-7-rgb);
-  --palette-primary-light: var(--oc-orange-5);
-  --palette-primary-light-rgb: var(--oc-orange-5-rgb);
-  --palette-primary-text: var(--oc-orange-1);
-  --palette-primary-text-rgb: var(--oc-orange-1-rgb);
-  --palette-primary-white: var(--oc-orange-0);
-  --palette-primary-white-rgb: var(--oc-orange-0-rgb);
+  --palette-primary-dark: var(--oc-blue-9);
+  --palette-primary-dark-rgb: var(--oc-blue-9-rgb);
+  --palette-primary: var(--oc-blue-7);
+  --palette-primary-rgb: var(--oc-blue-7-rgb);
+  --palette-primary-light: var(--oc-blue-5);
+  --palette-primary-light-rgb: var(--oc-blue-5-rgb);
+  --palette-primary-text: var(--oc-blue-1);
+  --palette-primary-text-rgb: var(--oc-blue-1-rgb);
+  --palette-primary-white: var(--oc-blue-0);
+  --palette-primary-white-rgb: var(--oc-blue-0-rgb);
 
-  --palette-secondary-dark: var(--oc-cyan-9);
-  --palette-secondary-dark-rgb: var(--oc-cyan-9-rgb);
-  --palette-secondary: var(--oc-cyan-7);
-  --palette-secondary-rgb: var(--oc-cyan-7-rgb);
-  --palette-secondary-light: var(--oc-cyan-5);
-  --palette-secondary-light-rgb: var(--oc-cyan-5-rgb);
-  --palette-secondary-text: var(--oc-cyan-1);
-  --palette-secondary-text-rgb: var(--oc-cyan-1-rgb);
-  --palette-secondary-white: var(--oc-cyan-0);
-  --palette-secondary-white-rgb: var(--oc-cyan-0-rgb);
+  --palette-secondary-dark: var(--oc-teal-9);
+  --palette-secondary-dark-rgb: var(--oc-teal-9-rgb);
+  --palette-secondary: var(--oc-teal-7);
+  --palette-secondary-rgb: var(--oc-teal-7-rgb);
+  --palette-secondary-light: var(--oc-teal-5);
+  --palette-secondary-light-rgb: var(--oc-teal-5-rgb);
+  --palette-secondary-text: var(--oc-teal-1);
+  --palette-secondary-text-rgb: var(--oc-teal-1-rgb);
+  --palette-secondary-white: var(--oc-teal-0);
+  --palette-secondary-white-rgb: var(--oc-teal-0-rgb);
 
   /* Color */
   --colors-background: var(--palette-white);
@@ -43,8 +43,8 @@
 
   --colors-inverted-background: var(--palette-black);
   --colors-inverted-background-rgb: var(--palette-black-rgb);
-  --colors-inverted-text-heading: var(--palette-lightest);
-  --colors-inverted-text-heading-rgb: var(--palette-lightest-rgb);
+  --colors-inverted-text-heading: var(--palette-gray-lightest);
+  --colors-inverted-text-heading-rgb: var(--palette-gray-lightest-rgb);
   --colors-inverted-text-body: var(--palette-gray-light);
   --colors-inverted-text-body-rgb: var(--palette-gray-light-rgb);
 

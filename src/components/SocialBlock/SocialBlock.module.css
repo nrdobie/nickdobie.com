@@ -1,0 +1,71 @@
+.SocialBlock {
+  display: grid;
+  grid-template-columns: 3rem auto;
+  grid-template-rows: 2rem 1rem;
+  grid-column-gap: 0.25rem;
+  grid-template-areas: 
+    "icon account" 
+    "icon type";
+  border-radius: .5rem;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  margin-bottom: 1rem;
+}
+
+.SocialBlock:link, .SocialBlock:visited {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.SocialBlock_icon {
+  grid-area: icon;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--colors-text-body);
+  border-radius: 50%;
+  transition: all 100ms ease-in-out;
+}
+
+.SocialBlock:link:hover .SocialBlock_icon, 
+.SocialBlock:link:focus .SocialBlock_icon,
+.SocialBlock:visited:hover .SocialBlock_icon, 
+.SocialBlock:visited:focus .SocialBlock_icon {
+  color: var(--colors-accent-background);
+}
+
+.SocialBlock_account {
+  color: var(--colors-text-heading);
+  grid-area: account;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  transition: all 100ms ease-in-out;
+}
+
+.SocialBlock:link:hover .SocialBlock_account, 
+.SocialBlock:link:focus .SocialBlock_account,
+.SocialBlock:visited:hover .SocialBlock_account, 
+.SocialBlock:visited:focus .SocialBlock_account {
+  color: var(--colors-accent-background);
+}
+
+.SocialBlock_type {
+  grid-area: type;
+  line-height: 1rem;
+  font-size: .85rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--colors-text-body);
+  transition: all 100ms ease-in-out;
+}
+
+.SocialBlock:link:hover .SocialBlock_type, 
+.SocialBlock:link:focus .SocialBlock_type,
+.SocialBlock:visited:hover .SocialBlock_type, 
+.SocialBlock:visited:focus .SocialBlock_type {
+  color: var(--colors-accent-background);
+}
