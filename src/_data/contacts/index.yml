@@ -1,5 +1,5 @@
 accounts:
-  - account: 'Minneapolis, Minnesota, USA'
+  - account: 'Minneapolis, Minnesota'
     type: location
   - account: nick@dobie.me
     type: email
