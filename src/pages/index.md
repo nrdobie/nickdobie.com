@@ -9,34 +9,42 @@ heroImageCredit:
 about:
   illustration: UndrawInterview
   text: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce placerat
-    purus nec vehicula pharetra. Quisque purus nisl, iaculis a ante at, pretium
-    fringilla sem. Pellentesque scelerisque nisl id ipsum consectetur, vitae
-    eleifend odio tempus. Aenean viverra rutrum viverra. Pellentesque facilisis
-    faucibus lectus. Sed fringilla nibh nec nulla malesuada semper. Donec a
-    lectus molestie, mollis quam vitae, vulputate metus. Ut pulvinar eros vitae
-    eros suscipit, nec ultrices nisl tempus. Nulla pharetra finibus arcu, et
-    aliquam nisi. Nulla venenatis, quam eu venenatis tempor, magna libero
-    tincidunt nunc, a suscipit enim ligula gravida dui. Nam in ligula vitae ante
-    vehicula facilisis sit amet sed arcu. Etiam sit amet lacus vitae sapien
-    tempor egestas rhoncus in nisl. Phasellus sagittis lacus sed est placerat,
-    quis ornare velit fermentum. Vestibulum sit amet pulvinar nulla. Nunc in
-    nulla at nunc pharetra suscipit eu ac mauris.
+    I knew from an early age that I enjoyed computers and always wanted to know
+    how they worked. When I was 12, I picked up Teach Yourself Web Programming
+    in 21 Days and I fell in love with web development. After my first taste of
+    web development, I would spend hours searching the Internet and reading
+    books to learn everything that I could about web programming. I’d also do
+    small projects to see how I could combine what I knew. To this day
+    everything I know about web programming I taught myself and continue to keep
+    learning and doing small projects. Throughout myself teaching I have found
+    that I am able to quickly pick up new languages and techniques.
   title: <about-me>
 highlights:
-  title: <highlights>
   items:
     - illustration: NodeJsIcon
-      text: My primary specialty is in JavaScript development both front and backend.
-      title: JavaScript Development
+      text: >-
+        The language I am most comfortable programing in is JavaScript (and
+        TypeScript). I have been working with JavaScript for over eight years
+        and have a deep understanding of not only the language but how browsers
+        run JavaScript. While my expertise in JavaScript has lead me to be more
+        focused on the front-end, I have been able to apply my skills from being
+        a full-stack engineer into building NodeJS back-ends.
+      title: JavaScript
     - illustration: ReactJsIcon
-      text: My primary specialty is in JavaScript development both front and backend.
-      title: React Development
+      text: >-
+        Six years ago I ran across a framework called Backbone.js and instantly
+        fell in love with the potential of single page applications. Since then
+        I have learned other SPA frameworks and tricks for optimizing
+        performance of an SPA. Today my framework of choice is React and have
+        been coaching others on how to program scalable React applications.
+      title: Single Page Applications
     - illustration: DockerIcon
-      text: My primary specialty is in JavaScript development both front and backend.
-      title: Cloud Development
-    - illustration: GraphqlIcon
-      text: My primary specialty is in JavaScript development both front and backend.
-      title: GraphQL Development
+      text: >-
+        Building a feature rich application is important, but if no one can
+        access the application then the features don't matter. This is why I
+        have learned how to not only write feature rich  applications but
+        architect them in a way that allows them to scale to meet demands.
+      title: Scalable Deployments
+  title: <highlights>
 ---
 
