@@ -5,7 +5,7 @@ export const IndexPagePreview = ({ entry, getAsset }) => {
   const data = entry.getIn(["data"]).toJS();
 
   if (data) {
-    return <IndexPageTemplate {...data} />;
+    return <IndexPageTemplate {...data} contacts={{accounts: []}} />;
   } else {
     return <div>Loading...</div>;
   }
