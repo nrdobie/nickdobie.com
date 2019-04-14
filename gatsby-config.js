@@ -83,7 +83,7 @@ module.exports = {
       options: {
         manualInit: true,
         modulePath: `${__dirname}/src/cms/cms.ts`,
-        publicPath: '/___admin'
+        publicPath: 'https://www.nickdobie.com/___admin'
       },
     },
     {

@@ -38,5 +38,18 @@ highlights:
     - illustration: GraphqlIcon
       text: My primary specialty is in JavaScript development both front and backend.
       title: GraphQL Development
+skills:
+  title: <skills>
+  items:
+    - title: Languages
+      items:
+        - JavaScript
+        - TypeScript
+        - Ruby
+    - title: Frameworks
+      items:
+        - React
+        - Angular
+        - Aurelia
 ---
 

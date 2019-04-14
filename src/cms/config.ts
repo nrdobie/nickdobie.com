@@ -1,7 +1,10 @@
-import changeCase from 'change-case';
+import changeCase from "change-case";
 import { illustrations } from "../illustrations";
 
-const illustrationsOptionsList = Object.keys(illustrations).map(i => ({ label: changeCase.title(i), value: i }))
+const illustrationsOptionsList = Object.keys(illustrations).map(i => ({
+  label: changeCase.title(i),
+  value: i
+}));
 
 export const config = {
   load_config_file: false,
@@ -45,7 +48,7 @@ export const config = {
                 {
                   label: "Title",
                   name: "title",
-                  default: "About Me",
+                  default: "<about-me>",
                   widget: "string"
                 },
                 { label: "Text", name: "text", widget: "text" },
@@ -69,8 +72,8 @@ export const config = {
                   widget: "string"
                 },
                 {
-                  label: 'Items',
-                  name: 'items',
+                  label: "Items",
+                  name: "items",
                   widget: "list",
                   allow_add: true,
                   fields: [
@@ -85,15 +88,48 @@ export const config = {
                   ]
                 }
               ]
+            },
+            {
+              label: "Skills",
+              name: "skills",
+              widget: "object",
+              fields: [
+                {
+                  label: "Title",
+                  name: "title",
+                  default: "<skills>",
+                  widget: "string"
+                },
+                {
+                  label: "Items",
+                  name: "items",
+                  allow_add: true,
+                  widget: "list",
+                  fields: [
+                    {
+                      label: "Title",
+                      name: "title",
+                      widget: "string"
+                    },
+                    {
+                      label: "Items",
+                      name: "items",
+                      allow_add: true,
+                      widget: "list",
+                      field: "string"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
       ]
     },
     {
-      name: 'data',
-      label: 'Data',
-      extension: 'yml',
+      name: "data",
+      label: "Data",
+      extension: "yml",
       preview: false,
       files: [
         {
@@ -102,31 +138,31 @@ export const config = {
           name: "contact",
           fields: [
             {
-              label: 'Accounts',
-              name: 'accounts',
-              widget: 'list',
+              label: "Accounts",
+              name: "accounts",
+              widget: "list",
               allow_add: true,
               fields: [
                 {
-                  label: 'Type',
-                  name: 'type',
-                  widget: 'select',
+                  label: "Type",
+                  name: "type",
+                  widget: "select",
                   options: [
-                    { label: 'Location', value: 'location' },
-                    { label: 'Phone', value: 'phone' },
-                    { label: 'E-Mail', value: 'email' },
-                    { label: 'GitHub', value: 'github' },
-                    { label: 'CodePen', value: 'codepen' },
-                    { label: 'LinkedIn', value: 'linkedin' },
-                    { label: 'Twitter', value: 'twitter' },
-                    { label: 'Facebook', value: 'facebook' },
-                    { label: 'Medium', value: 'medium' },
+                    { label: "Location", value: "location" },
+                    { label: "Phone", value: "phone" },
+                    { label: "E-Mail", value: "email" },
+                    { label: "GitHub", value: "github" },
+                    { label: "CodePen", value: "codepen" },
+                    { label: "LinkedIn", value: "linkedin" },
+                    { label: "Twitter", value: "twitter" },
+                    { label: "Facebook", value: "facebook" },
+                    { label: "Medium", value: "medium" }
                   ]
                 },
                 {
-                  label: 'Account',
-                  name: 'account',
-                  widget: 'string'
+                  label: "Account",
+                  name: "account",
+                  widget: "string"
                 }
               ]
             }

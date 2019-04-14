@@ -32,6 +32,13 @@ interface IIndexPageTemplateProps {
       illustration: string;
     }>;
   };
+  skills: {
+    title: string;
+    items: Array<{
+      title: string
+      items: string[]
+    }>
+  }
   contacts: {
     accounts: Array<{
       type: SocialType
@@ -49,6 +56,7 @@ export const IndexPageTemplate: React.SFC<IIndexPageTemplateProps> = ({
   heroImageCredit,
   about,
   highlights,
+  skills,
   contacts
 }) => (
   <React.Fragment>
@@ -73,6 +81,23 @@ export const IndexPageTemplate: React.SFC<IIndexPageTemplateProps> = ({
               <IconBlock {...highlight} />
             </GridList.Item>
           ))}
+        </GridList>
+      </Container>
+    </Section>
+    <Section>
+      <Container>
+        <h2>{skills.title}</h2>
+        <GridList>
+          {skills.items.map(skillSet => 
+            <div key={skillSet.title}>
+              <h3>{skillSet.title}</h3>
+              <GridList itemMinWidth="100px">
+                {skillSet.items.map(item => 
+                  <div key={`${skillSet.title}::${item}`} >{item}</div>  
+                )}
+              </GridList>
+            </div>
+          )}
         </GridList>
       </Container>
     </Section>
@@ -130,6 +155,13 @@ export const pageQuery = graphql`
             title
             text
             illustration
+          }
+        }
+        skills {
+          title
+          items {
+            title
+            items
           }
         }
       }
