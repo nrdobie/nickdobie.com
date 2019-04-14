@@ -117,6 +117,10 @@ export const config = {
                     { label: 'E-Mail', value: 'email' },
                     { label: 'GitHub', value: 'github' },
                     { label: 'CodePen', value: 'codepen' },
+                    { label: 'LinkedIn', value: 'linkedin' },
+                    { label: 'Twitter', value: 'twitter' },
+                    { label: 'Facebook', value: 'facebook' },
+                    { label: 'Medium', value: 'medium' },
                   ]
                 },
                 {
