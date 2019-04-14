@@ -49,7 +49,7 @@ export const Footer: React.SFC = () => {
               )
               .map(({ type, account }) => (
                 <a
-                  key={`button_${account.type}_${account.account}`}
+                  key={`button_${type}_${account}`}
                   className={classnames("no-style", styles.Footer_socialButton)}
                   target="_blank"
                   href={getUrl(type, account)}
