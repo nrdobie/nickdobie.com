@@ -8,16 +8,15 @@ heroImageCredit:
   link: 'https://unsplash.com/@markusspiske'
 about:
   illustration: UndrawInterview
-  text: >
-    I knew from an early age that I enjoyed computers and always wanted to know
-    how they worked. When I was 12, I picked up Teach Yourself Web Programming
-    in 21 Days and I fell in love with web development. After my first taste of
-    web development, I would spend hours searching the Internet and reading
-    books to learn everything that I could about web programming. I’d also do
-    small projects to see how I could combine what I knew. To this day
-    everything I know about web programming I taught myself and continue to keep
-    learning and doing small projects. Throughout myself teaching I have found
-    that I am able to quickly pick up new languages and techniques.
+  text: >-
+    I am a very enthusiastic software engineer with over a decade of
+    professional experience and specialize in JavaScript and front-end
+    development. In my career I have worked in a variety of industries and roles
+    making it easy for me to take on a wide variety of tasks required by the
+    team. Wither it is working with a large team or going solo, I strive to
+    deliver not only high quality results but something that is compatible and
+    performant. I'm a self taught engineer and can quickly learn new languages
+    and techniques to improve whatever project I am working on.
   title: <about-me>
 highlights:
   items:
@@ -42,8 +41,8 @@ highlights:
       text: >-
         Building a feature rich application is important, but if no one can
         access the application then the features don't matter. This is why I
-        have learned how to not only write feature rich  applications but
-        architect them in a way that allows them to scale to meet demands.
+        have made a point of not only learning how to write feature rich
+        applications but ensure they are performant and scalable.
       title: Scalable Deployments
   title: <highlights>
 ---
