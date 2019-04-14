@@ -50,7 +50,7 @@ highlights:
         have learned how to not only write feature rich  applications but
         architect them in a way that allows them to scale to meet demands.
       title: Scalable Deployments
-    - illustration: GraphqlIcon
+    - illustration: Bug
       text: >-
         I have a highly analytical mind which I find helps me debug code
         extremely fast.
