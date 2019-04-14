@@ -115,8 +115,7 @@ export const config = {
                       label: "Items",
                       name: "items",
                       allow_add: true,
-                      widget: "list",
-                      field: "string"
+                      widget: "list"
                     }
                   ]
                 }
