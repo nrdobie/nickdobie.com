@@ -1,10 +1,14 @@
 .Footer {
   display: flex;
   justify-content: space-between;
+  flex-direction: column-reverse;
 }
 
 .Footer_social {
   display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
 }
 
 .Footer_socialButton {
@@ -18,7 +22,8 @@
   border-radius: 50%;
   background-color: var(--colors-inverted-background);
   color: var(--colors-inverted-text-heading);
-  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
   transition: all 100ms ease-in-out;
 }
 
@@ -27,6 +32,16 @@
   color: var(--colors-accent-text-heading);
 }
 
-.Footer_socialButton:last-child {
-  margin-right: 0;
+.Footer_socialButton:first-child {
+  margin-left: 0;
+}
+
+@media (min-width: 800px) {
+  .Footer {
+    flex-direction: row;
+  }
+
+  .Footer_social {
+    justify-content: flex-end;
+  }
 }

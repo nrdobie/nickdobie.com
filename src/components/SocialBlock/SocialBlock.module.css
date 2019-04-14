@@ -1,14 +1,12 @@
 .SocialBlock {
   display: grid;
-  grid-template-columns: 3rem auto;
-  grid-template-rows: 2rem 1rem;
+  grid-template-columns: 2rem auto;
+  grid-template-rows: 1.25rem 0.75rem;
   grid-column-gap: 0.25rem;
   grid-template-areas: 
     "icon account" 
     "icon type";
   border-radius: .5rem;
-  border-top-left-radius: 2rem;
-  border-bottom-left-radius: 2rem;
   margin-bottom: 1rem;
 }
 
@@ -19,14 +17,13 @@
 
 .SocialBlock_icon {
   grid-area: icon;
-  width: 3rem;
-  height: 3rem;
+  width: 2rem;
+  height: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1.25rem;
   color: var(--colors-text-body);
-  border-radius: 50%;
   transition: all 100ms ease-in-out;
 }
 
@@ -40,8 +37,8 @@
 .SocialBlock_account {
   color: var(--colors-text-heading);
   grid-area: account;
-  line-height: 2rem;
-  font-size: 1.5rem;
+  line-height: 1.25rem;
+  font-size: 1rem;
   font-weight: 400;
   transition: all 100ms ease-in-out;
 }
@@ -55,8 +52,8 @@
 
 .SocialBlock_type {
   grid-area: type;
-  line-height: 1rem;
-  font-size: .85rem;
+  line-height: .75rem;
+  font-size: .65rem;
   text-transform: uppercase;
   font-weight: bold;
   color: var(--colors-text-body);
@@ -68,4 +65,27 @@
 .SocialBlock:visited:hover .SocialBlock_type, 
 .SocialBlock:visited:focus .SocialBlock_type {
   color: var(--colors-accent-background);
+}
+
+@media (min-width: 800px) {
+  .SocialBlock {
+    grid-template-columns: 3rem auto;
+    grid-template-rows: 2rem 1rem;
+  }
+
+  .SocialBlock_icon {
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+  }
+
+  .SocialBlock_account {
+    line-height: 2rem;
+    font-size: 1.75rem;
+  }
+
+  .SocialBlock_type {
+    line-height: 1;
+    font-size: 0.85rem;
+  }
 }
