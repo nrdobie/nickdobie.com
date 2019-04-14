@@ -46,17 +46,67 @@ highlights:
       title: Scalable Deployments
   title: <highlights>
 skills:
-  title: <skills>
   items:
-    - title: Languages
-      items:
+    - items:
+        - HTML
+        - CSS
         - JavaScript
         - TypeScript
+        - NodeJS
+        - Electron
+        - PHP
         - Ruby
-    - title: Frameworks
-      items:
+        - Python
+        - XML
+        - MySQL
+        - MariaDB
+        - PostgreSQL
+        - MongoDB
+        - Redis
+        - OrientDB
+        - Neo4j
+      title: Languages
+    - items:
         - React
+        - Redux
+        - Babel
+        - webpack
+        - Parcel
         - Angular
         - Aurelia
+        - jQuery
+        - Backbone.js
+        - Ember.js
+        - Drupal
+        - WordPress
+        - Ruby on Rails
+        - Doctrine
+      title: Frameworks
+    - items:
+        - Facebook
+        - Twitter
+        - Google Maps
+        - YouTube
+        - Instagram
+        - Twilio
+        - Github
+      title: APIs
+    - items:
+        - Windows
+        - macOS
+        - Red Hat
+        - Ubuntu
+        - centOS
+      title: Operating Systems
+    - items:
+        - Docker
+        - Kubernetes
+        - Google Cloud
+        - Amazon Web Services
+        - DigitalOcean
+        - Heroku
+        - Microsoft Azure
+      title: Cloud Providers
+  title: <skills>
 ---
 
