@@ -69,6 +69,7 @@ skills:
     - items:
         - React
         - Redux
+        - GraphQL
         - Babel
         - webpack
         - Parcel
