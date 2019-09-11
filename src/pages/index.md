@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
-title: NicholasDobie
-subtitle: = new SoftwareEngineer()
+title: Nicholas Dobie
+subtitle: Software Engineer
 heroImage: /assets/markus-spiske-207946-unsplash.jpg
 heroImageCredit:
   author: Markus Spiske
