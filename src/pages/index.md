@@ -70,6 +70,8 @@ skills:
         - React
         - Redux
         - GraphQL
+        - Nest.js
+        - Next.js
         - Babel
         - webpack
         - Parcel
