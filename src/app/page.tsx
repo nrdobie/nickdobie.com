@@ -1,14 +1,19 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
+import Navigation from "~/app/_components/navigation";
+import ProfilePicture from "~/images/profile.jpg";
 import { socialMediaAccounts } from "~/social-media.constants";
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center space-y-8 bg-primary p-8 text-primary-content">
+      <div className="absolute right-8 top-8 max-md:left-8">
+        <Navigation />
+      </div>
       <figure className="avatar mask mask-squircle bg-current p-2">
         <div className="mask mask-squircle w-32">
-          <Image src="/assets/profile.jpg" alt="" width={128} height={128} />
+          <Image src={ProfilePicture} alt="" width={128} height={128} placeholder="blur" />
         </div>
       </figure>
       <div className="text-center">

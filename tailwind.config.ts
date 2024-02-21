@@ -7,27 +7,33 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        screen: "100svh",
+      },
+      minHeight: {
+        screen: "100svh",
+      },
+    },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/container-queries"), require("daisyui")],
 
   daisyui: {
     themes: [
       {
-        "my-theme": {
-          "primary": "hsl(317, 64%, 36%)",
-          "secondary": "hsl(14, 51%, 73%)",
-          "accent": "hsl(40, 51%, 62%)",
-          "base-100": "hsl(334, 47%, 97%)",
-          "neutral": "hsl(322, 52%, 4%)",
+        light: {
+          "primary": "#972175",
+          "secondary": "#94d19f",
+          "accent": "#74b8c4",
+          "neutral": "#34182c",
+          "base-100": "#f9f2f7",
         },
-        "my-theme-dark": {
-          "prefers-color-scheme": "dark",
-          "neutral": "hsl(322, 52%, 96%)",
-          "base-100": "hsl(334, 47%, 3%)",
-          "primary": "hsl(317, 64%, 36%)",
-          "secondary": "hsl(14, 51%, 27%)",
-          "accent": "hsl(40, 51%, 38%)",
+        dark: {
+          "primary": "#972175",
+          "secondary": "#2e6b39",
+          "accent": "#3c7f8b",
+          "neutral": "#36172e",
+          "base-100": "#0e060c",
         },
       },
     ],
