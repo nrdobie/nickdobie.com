@@ -4,39 +4,39 @@ import { faArrowUpRightFromSquare } from "@fortawesome/sharp-regular-svg-icons";
 import clsx from "clsx";
 import Image from "next/image";
 
-import { Project } from "~/data/projects";
+import { Website } from "~/data/projects";
 
-type ProjectItemProps = {
-  project: Project;
+type WebsiteOrDemoApplicationItemProps = {
+  website: Website;
 };
 
-export default function ProjectItem({ project }: ProjectItemProps) {
+export default function WebsiteOrDemoApplicationItem({ website }: WebsiteOrDemoApplicationItemProps) {
   return (
     <div className="space-y-2 rounded-box bg-primary/10 p-4">
       <Image
-        src={project.image}
+        src={website.image}
         placeholder="blur"
-        alt={`Screenshot of ${project.name}`}
+        alt={`Screenshot of ${website.name}`}
         width={800}
-        className={clsx("rounded-box border border-primary", !!project.darkModeImage && "dark:hidden")}
+        className={clsx("rounded-box border border-primary", !!website.darkModeImage && "dark:hidden")}
       />
-      {project.darkModeImage ? (
+      {website.darkModeImage ? (
         <Image
-          src={project.darkModeImage}
+          src={website.darkModeImage}
           placeholder="blur"
-          alt={`Screenshot of ${project.name}`}
+          alt={`Screenshot of ${website.name}`}
           width={800}
           className="hidden rounded-box border border-primary dark:block"
         />
       ) : null}
-      <h2 className="text-xl font-semibold lg:text-2xl">{project.name}</h2>
-      <p className="">{project.description}</p>
+      <h2 className="text-xl font-semibold lg:text-2xl">{website.name}</h2>
+      <p className="">{website.description}</p>
       <div className="flex gap-2 max-md:flex-col max-md:items-stretch">
-        <a href={project.viewUrl} target="_blank" rel="noreferrer" className="btn btn-primary">
+        <a href={website.viewUrl} target="_blank" rel="noreferrer" className="btn btn-primary">
           <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
           View this Site
         </a>
-        <a href={project.githubUrl} target="_blank" rel="noreferrer" className="btn btn-secondary">
+        <a href={website.githubUrl} target="_blank" rel="noreferrer" className="btn btn-secondary">
           <FontAwesomeIcon icon={faGithub} />
           View Source on GitHub
         </a>

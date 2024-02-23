@@ -1,6 +1,7 @@
-import projects from "~/data/projects";
+import NpmLibraryItem from "~/app/(navigated)/projects/_components/npm-library-item";
+import projects, { ProjectType } from "~/data/projects";
 
-import ProjectItem from "./_components/project-item";
+import WebsiteOrDemoApplicationItem from "./_components/website-or-demo-application-item";
 
 export default function ProjectsPage() {
   return (
@@ -10,9 +11,13 @@ export default function ProjectsPage() {
         These are some example projects that I have worked on that are publicly available and that you can view the
         source code for.
       </p>
-      {projects.map((project) => (
-        <ProjectItem key={project.id} project={project} />
-      ))}
+      {projects.map((project) => {
+        if (project.type === ProjectType.WEBSITE || project.type === ProjectType.DEMO_APPLICATION) {
+          return <WebsiteOrDemoApplicationItem key={project.id} website={project} />;
+        } else if (project.type === ProjectType.NPM_LIBRARY) {
+          return <NpmLibraryItem key={project.id} npmLibrary={project} />;
+        }
+      })}
     </div>
   );
 }
