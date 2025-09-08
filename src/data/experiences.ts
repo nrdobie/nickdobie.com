@@ -29,6 +29,21 @@ export type Experience = {
 
 const experiences: Experience[] = [
   {
+    id: "accelint",
+    type: EmploymentType.DIRECT_EMPLOYEE,
+    company: "AccelInt",
+    position: "Lead Software Engineer",
+    location: "Austin, TX",
+    startDate: new Date("2024-05"),
+    endDate: new Date(),
+    highlights: [
+      "Building Command and Control software tracking thousands of objects in real-time with DeckGL.",
+      "Building a distributed high throughput tracking server.",
+      "Coordinating building a company framework for building C2 system.",
+      "Working under tight deadlines to secure contracts working with multiple external partners and military.",
+    ],
+  },
+  {
     id: "prewitt-ridge",
     type: EmploymentType.DIRECT_EMPLOYEE,
     company: "Prewitt Ridge",
