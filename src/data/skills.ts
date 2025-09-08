@@ -11,7 +11,7 @@ export enum Expertise {
 export type Skill = {
   name: string;
   url: string;
-  image: StaticImageData;
+  image?: StaticImageData;
   expertise: Expertise;
   startedUsing: number;
 };
@@ -100,6 +100,18 @@ const skills: Skill[] = [
     image: require("~/images/logos/python-ar21.svg"),
     expertise: Expertise.Beginner,
     startedUsing: 2016,
+  },
+  {
+    name: "DeckGL",
+    url: "https://deck.gl/",
+    expertise: Expertise.Advanced,
+    startedUsing: 2024,
+  },
+  {
+    name: "Drizzle ORM",
+    url: "https://orm.drizzle.team/",
+    expertise: Expertise.Advanced,
+    startedUsing: 2024,
   },
 ];
 

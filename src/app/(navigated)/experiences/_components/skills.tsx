@@ -16,7 +16,11 @@ export default function Skills() {
           rel="noreferrer"
           className="flex flex-col items-center gap-2 rounded-box"
         >
-          <Image src={skill.image} alt={skill.name} width={160} className="rounded-box dark:bg-white" />
+          {skill.image ? (
+            <Image src={skill.image} alt={skill.name} width={160} className="rounded-box dark:bg-white" />
+          ) : (
+            <div className="h-[76px] w-[160px] rounded-box bg-gray-200" />
+          )}
           <progress className="progress progress-primary" value={skill.expertise} max={5} />
           <div className="flex w-full justify-between text-sm">
             <span>{Expertise[skill.expertise]}</span>
